@@ -1,2 +1,45 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+def __init__(self,value,link_node=None, renda=None):
+  self.value = value
+  self.link_node = link_node
+  self.prev_node = None 
+  self.renda = renda
+  
+def get_value(Self):
+ return self.value
+
+def get_link_node(self):
+ return self.link_node
+
+def set_link_node(self, link_node):
+    self.link_node = link_node
+    if link_node is not None:
+        link_node.prev_node = self   
+        
+def get_prev_node(Self):
+    return self.prev_node
+
+
+saiara = node("Nem tudo que a gente olha a gente vê", renda= 10000)
+
+fernando = node("Alguma coisa ai", renda = 8000)
+
+alan = node("Só queria ir embora", renda = 9500)
+
+pablo = node("Hoje é festa em girlene galera", renda = 90080)
+
+urubudopix = node("Mim dê papai", renda = 90000)
+
+silas = node("Queria dormir", renda = 15000)
+
+rafael = node("Vou pular carnaval", renda = 6000)
+
+saiara.set_link_node(fernando)  
+fernando.set_link_node(alan) 
+alan.set_link_node(silas) 
+silas.set_link_node(rafael) 
+rafael.set_link_node(saiara) 
+
+print('urubudopix')
+ 
+       
